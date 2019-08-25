@@ -1,0 +1,9 @@
+name: A workflow for my new action on PR's
+on: pull_request
+jobs:
+  build:
+    name: PR action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: ./action-b
